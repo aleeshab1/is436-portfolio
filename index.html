@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Aleesha Portfolio</title>
+ <!-- Bootstrap + icons -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+ <!-- Font -->
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+ <style>
+   body {
+     background-color: #fffbfd;
+     font-family: 'Playfair Display', serif;
+     scroll-behavior: smooth;
+   }
+
+   /* Navbar */
+   .navbar {
+     background-color: #fffbfd;
+     border-bottom: 0.5px solid #e9c4d8;
+     padding: 16px 0;
+   }
+   .navbar-brand {
+     font-weight: 700;
+     font-size: 1.6rem;
+     color: #4b2e39 !important;
+   }
+   .nav-link-custom {
+     color: #7a4b61;
+     margin-left: 22px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-size: 0.8rem;
+   }
+   .nav-link-custom:hover {
+     color: #d48fb3;
+   }
+
+   /* Mobile */
+   .navbar-toggler {
+     border-color: #d48fb3;
+   }
+   .navbar-toggler-icon {
+     filter: invert(20%) sepia(20%) saturate(500%) hue-rotate(300deg);
+   }
+
+   /* Hero */
+   .hero {
+     padding: 110px 20px 90px;
+     text-align: center;
+   }
+   .hero h1 {
+     font-size: 3.5rem;
+     font-weight: 700;
+     color: #3a2a30;
+     line-height: 1.2;
+   }
+   .hero span {
+     color: #c084a1;
+     font-style: italic;
+   }
+   .hero p {
+     font-size: 1rem;
+     color: #7a4b61;
+     margin-top: 18px;
+     max-width: 500px;
+     margin-left: auto;
+     margin-right: auto;
+     line-height: 1.8;
+   }
+
+   /* Buttons */
+   .btn-main {
+     background-color: #c084a1;
+     color: white;
+     border: none;
+     padding: 12px 30px;
+     font-size: 0.8rem;
+     font-weight: 600;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     border-radius: 8px;
+   }
+   .btn-main:hover {
+     background-color: #a96c8b;
+   }
+   .btn-outline-custom {
+     border: 1.5px solid #c084a1;
+     color: #c084a1;
+     padding: 12px 30px;
+     font-size: 0.8rem;
+     font-weight: 600;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     border-radius: 8px;
+     text-decoration: none;
+   }
+   .btn-outline-custom:hover {
+     background-color: #c084a1;
+     color: white;
+   }
+
+   /* Section */
+   .section-title {
+     font-size: 2.2rem;
+     font-weight: 700;
+     color: #3a2a30;
+   }
+   .section-subtitle {
+     font-size: 0.8rem;
+     color: #c084a1;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     margin-bottom: 40px;
+   }
+
+   /* Divider */
+   .pink-divider {
+     width: 50px;
+     height: 2px;
+     background-color: #c084a1;
+     margin: 0 auto 20px;
+   }
+
+   /* Cards */
+   .learn-card {
+     background: #fffafd;
+     border: 1px solid #ecd2e0;
+     border-radius: 16px;
+     padding: 30px;
+     text-align: center;
+     transition: 0.3s;
+     height: 100%;
+   }
+   .learn-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(200, 120, 160, 0.12);
+   }
+   .learn-card h4 {
+     margin-top: 15px;
+     font-size: 1.1rem;
+     color: #3a2a30;
+   }
+   .learn-card p {
+     color: #7a4b61;
+     font-size: 0.9rem;
+     margin-top: 10px;
+   }
+   .icon {
+     font-size: 2rem;
+     color: #c084a1;
+   }
+
+   /* Footer */
+   footer {
+     border-top: 0.5px solid #ecd2e0;
+     background-color: #fffbfd;
+   }
+   footer p {
+     color: #c084a1;
+     font-size: 0.8rem;
+     letter-spacing: 1px;
+   }
+ </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+ <div class="container">
+   <a class="navbar-brand" href="index.html">MyPortfolio</a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+     <div class="navbar-nav">
+       <a class="nav-link nav-link-custom" href="index.html">Home</a>
+       <a class="nav-link nav-link-custom" href="about.html">About</a>
+       <a class="nav-link nav-link-custom" href="portfolio.html">Projects</a>
+       <a class="nav-link nav-link-custom" href="skills.html">Skills</a>
+       <a class="nav-link nav-link-custom" href="contact.html">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+ <div class="container">
+   <h1>Hello! My name is <span>Aleesha</span></h1>
+   <p>
+     An Information Systems student passionate about problem-solving,
+     design, and technology.
+   </p>
+   <div class="mt-4">
+     <a href="portfolio.html" class="btn btn-main">View My Projects</a>
+     <a href="contact.html" class="btn-outline-custom">Contact Me</a>
+   </div>
+ </div>
+</section>
+
+<!-- What I learned -->
+<section class="py-5">
+ <div class="container text-center">
+   <div class="pink-divider"></div>
+   <h2 class="section-title"> Technical Expertise</h2>
+   <p class="section-subtitle">What I Learned In IS436</p>
+   <div class="row g-4 mt-3">
+     <div class="col-md-6">
+       <div class="learn-card">
+         <div class="icon"><i class="bi bi-code-slash"></i></div>
+         <h4>Web Development</h4>
+         <p>Built responsive websites using HTML, Bootstrap, and GitHub Pages deployment.</p>
+       </div>
+     </div>
+     <div class="col-md-6">
+       <div class="learn-card">
+         <div class="icon"><i class="bi bi-gear"></i></div>
+         <h4>System Analysis</h4>
+         <p>Analyzed requirements and designed systems using SDLC frameworks.</p>
+       </div>
+     </div>
+     <div class="col-md-6">
+       <div class="learn-card">
+         <div class="icon"><i class="bi bi-database"></i></div>
+         <h4>Database Design</h4>
+         <p>Created ER diagrams, normalization, and relational database structures.</p>
+       </div>
+     </div>
+     <div class="col-md-6">
+       <div class="learn-card">
+         <div class="icon"><i class="bi bi-palette"></i></div>
+         <h4>UI/UX Design</h4>
+         <p>Designed wireframes and user-friendly interfaces with usability focus.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+ <p>© 2026 MyPortfolio. Built with Bootstrap 5.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

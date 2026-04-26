@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fffbfd;
+      font-family: 'Playfair Display', serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+   .navbar {
+     background-color: #fffbfd;
+     border-bottom: 0.5px solid #e9c4d8;
+     padding: 16px 0;
+   }
+   .navbar-brand {
+     font-weight: 700;
+     font-size: 1.6rem;
+     color: #4b2e39 !important;
+   }
+   .nav-link-custom {
+     color: #7a4b61;
+     margin-left: 22px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-size: 0.8rem;
+   }
+   .nav-link-custom:hover {
+     color: #d48fb3;
+   }
+
+   /* Mobile */
+   .navbar-toggler {
+     border-color: #d48fb3;
+   }
+   .navbar-toggler-icon {
+     filter: invert(20%) sepia(20%) saturate(500%) hue-rotate(300deg);
+   }
+
+    /* Header */
+    .about-header {
+      text-align: center;
+      padding: 90px 20px 70px;
+      background-color: #fffbfd;
+    }
+    .about-header h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #4b2e39;
+      margin-bottom: 15px;
+    }
+    .about-header p {
+      color: #9a6f82;
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    /* Divider */
+    .pink-divider {
+      width: 70px;
+      height: 3px;
+      background-color: #d9a8be;
+      margin: 0 auto 25px;
+      border-radius: 20px;
+    }
+
+    /* About card */
+    .about-card {
+      background: #fffafd;
+      border: 1px solid #e9c4d8;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 10px;
+      margin-bottom: 80px;
+      transition: 0.3s;
+    }
+    .about-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(180, 100, 140, 0.1);
+    }
+
+    /* Top label */
+    .about-top {
+      background-color: #f9edf4;
+      color: #b07a96;
+      padding: 18px 25px;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-bottom: 1px solid #eed6e3;
+    }
+
+    /* Content */
+    .about-content {
+      padding: 45px;
+    }
+    .about-content h4 {
+      color: #2d2d2d;
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+    .about-role {
+      color: #b07a96;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    .about-content h5 {
+      color: #4b2e39;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+    .about-content p {
+      color: #7a4b61;
+      line-height: 1.9;
+      font-size: 0.96rem;
+    }
+    hr {
+      border-color: #eed6e3;
+      margin: 30px 0;
+    }
+    .info-title {
+      color: #4b2e39;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+     border-top: 0.5px solid #ecd2e0;
+      background-color: #fffbfd;
+    }
+    footer p {
+      color: #b07a96;
+      font-size: 0.82rem;
+      letter-spacing: 1px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .about-header h2 {
+        font-size: 2.5rem;
+      }
+      .about-content {
+        padding: 30px;
+      }
+      .about-content h4 {
+        font-size: 1.8rem;
+      }
+      .nav-link-custom {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+ <div class="container">
+   <a class="navbar-brand" href="index.html">MyPortfolio</a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+     <div class="navbar-nav">
+       <a class="nav-link nav-link-custom" href="index.html">Home</a>
+       <a class="nav-link nav-link-custom" href="about.html">About</a>
+       <a class="nav-link nav-link-custom" href="portfolio.html">Projects</a>
+       <a class="nav-link nav-link-custom" href="skills.html">Skills</a>
+       <a class="nav-link nav-link-custom" href="contact.html">Contact</a>
+     </div>
+   </div>
+ </div>
+</nav>
+
+<!-- Header -->
+<section class="about-header">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="pink-divider"></div>
+    <p>
+      Learn more about my academic background, technical interests,
+      and growth throughout my Information Systems journey.
+    </p>
+  </div>
+</section>
+
+<!-- About section -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="about-card">
+        <!-- Top label -->
+        <div class="about-top">
+          IS436 Student Profile
+        </div>
+        <!-- Content -->
+        <div class="about-content">
+          <h4 class="text-center">
+            Aleesha Iqbal
+          </h4>
+          <p class="text-center about-role">
+            Information Systems Student
+          </p>
+          <hr>
+          <h5>Hello!</h5>
+          <p>
+            I am an Information Systems student at the University of Maryland
+            Baltimore County currently studying System Analysis and Design
+            in IS436. Throughout this course, I have developed practical
+            experience in analyzing business problems, designing system
+            solutions, and communicating technical concepts effectively.
+          </p>
+          <p>
+            This portfolio highlights the projects, technical skills,
+            and design knowledge I have gained throughout the semester.
+            My interests include database design, UI/UX principles,
+            system analysis, and responsive web development.
+          </p>
+          <p>
+            Through hands-on coursework and project development,
+            I have strengthened my understanding of the Software
+            Development Life Cycle (SDLC), wireframing, GitHub,
+            and modern web technologies using Bootstrap.
+          </p>
+          <hr>
+          <p>
+            <span class="info-title">University:</span>
+            University of Maryland Baltimore County
+          </p>
+          <p>
+            <span class="info-title">Major:</span>
+            Information Systems B.S.
+          </p>
+          <p>
+            <span class="info-title">Course:</span>
+            IS436 – System Analysis & Design
+          </p>
+          <p>
+            <span class="info-title">Graduation Year:</span>
+            2026
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <p style="margin: 0;">
+    © 2026 MyPortfolio. Built with Bootstrap 5.
+  </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
